@@ -1,0 +1,98 @@
+@charset "utf-8";
+/*basic*/
+html, body, ul, ol, li, dl, dt, dd, p, h1, h2, h3, h4, h5, h6, a, img, th, td, form, fieldset, iframe, object, pre, code, legend, blockquote, input{
+border:0 none;
+margin:0;
+outline:0 none;
+padding:0;
+list-style-type:none;
+}
+.clearfix:after{display:block;clear:both;content:"";visibility:hidden;height:0}
+.clearfix{zoom:1;}
+html{font-size:10px;}
+body,ul,li{margin:0;padding:0;font-family:'Helvetica Neue',Helvetica,"Segoe UI", "Lucida Grande", "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3",Arial, sans-serif;list-style:none;}
+body{font-size:1.6rem;color:#666;background:#fff; font-weight:normal;-webkit-tap-highlight-color:transparent;-webkit-text-size-adjust:none;}
+input, textarea, button { font-family:inherit;}
+.ibanner_wapper{width:100%;position:fixed;z-index:99;top:0;left:0;background-color:#fff;}
+.ibanner{width:100%;background:#ccc;position:relative;}
+.ibanner_titlewapper{width:100%;height:40px;font-size:1.6rem;line-height:40px;overflow:hidden;}
+li{padding:0 1rem;overflow:hidden;}
+.ibanner_title i{float:left;width:2.3rem;height:2.3rem;background:url(../images/f_i.png) no-repeat 0 0;margin:0.6rem 1rem 0 0;background-size:8.2rem 2.3rem;}
+.itime{float:right;}
+.iname{max-width:70%;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;float:left;display:block;}
+.itoplist{width:100%;font-size:1.6rem;color:#666;line-height:4.5rem;padding-bottom:1.2rem;}
+.itoplist li{background:#fff;height:4.5rem;}
+.itoplist li:first-child{border-bottom:1px solid #cacaca;}
+.itoplist i{float:left;width:1.4rem;height:1.4rem;margin:1.5rem 1rem 0 0;background:url(../images/f_i.png) no-repeat -4rem 0;background-size:8.2rem 2.3rem;}
+.itoplist_on{background:url(../images/f_i.png) no-repeat -2.5rem 0;color:#668ae6;}
+.ilist{width:100%;background:#fff;padding:285px 0 10rem;}
+.ilist_t{height:4rem;font-size:2rem;color:#5c83e5;line-height:4rem;overflow:hidden;text-align:center;border-bottom:1px solid #5c83e5;}
+.ichapter{padding:0 10px;background:#f6f6f6;height:5.5rem;line-height:5.5rem;border-bottom:1px solid #e6e6e6;font-size:1.8rem;}
+.ichapteri{text-align:left;}
+.ichapteri1{float:left;padding-right:1.5rem;}
+.ichapteri2{float:left;float: left;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 75%;}
+.inew{position:absolute;z-index:10;top:1.4rem;left:80%;width:1rem;height:1rem;border-radius:1rem;background:#ff5000;}
+.ichapteri3{float:right;width:1.3rem;height:0.8rem;background:url(../images/f_i.png) no-repeat -6.9rem 0;background-size:8.2rem 2.3rem;margin-top:2rem;}
+
+.it{padding:0 1rem;line-height:5.5rem;font-size:1.6rem;display:none;}
+.it li{padding:0;height:5.5rem;border-bottom:1px solid #fff;overflow:hidden;position:relative;}
+.it li:last-child{border-bottom:none;}
+.it_on{color:#a5a5a5;}
+.ino{float:left;padding-right:1rem;}
+.ichapterwapper_on .ichapter{color:#8ea9ed;}
+.ichapterwapper_on .ichapteri3{background:url(../images/f_i.png) no-repeat -5.5rem 0;background-size:8.2rem 2.3rem;}
+.ichapterwapper_on .it{display:block;}
+.ifooter{position:fixed;bottom:0;left:0;z-index:10;width:100%;height:50px;font-size:1.6rem;line-height:50px;text-align:center;}
+.ifooter_l{float:left;width:50%;background:#d4d4d4;color:#666;}
+.ifooter_r{float:left;width:50%;background:#ff5000;color:#fff;}
+
+a { color: #666; overflow: hidden; display: block; }
+    a:link { text-decoration: none; color: #666; }
+    a:active { text-decoration: none; color: #5c83e5; }
+
+.ilist { position: relative; width: 100%; overflow-x: hidden; }
+.ilist_t { font-size: 0; border-bottom: 0; position: fixed; top: 280px; left: 0; width: 100%; z-index: 10; }
+    .ilist_t li { padding: 0; height: 38px; width: 50%; background-color: #fff; display: inline-block; font-size: 2rem; color: #666; transition: all 0.15s linear; -webkit-transition: all 0.15s linear; -moz-transition: all 0.15s linear; border-bottom: 2px solid #e6e6e6; }
+.ilist_line { position: fixed; z-index: 11; top: 318px; left: 0; width: 50%; border-bottom: 2px solid #5c83e5; }
+.ilist_t li.on { color: #5c83e5; }
+.ilist_cont { padding-top: 35px; width: 200%; font-size: 0; overflow-x: hidden; position: relative; left: 0; }
+.ilist_cont1, .ilist_cont2 { padding-bottom: 5rem; display: inline-block; width: 100%; vertical-align: top; position: relative; overflow-y: auto; -webkit-overflow-scrolling: touch; }
+.msg_list { padding: 1rem; font-size: 1.6rem; }
+    .msg_list li { margin-bottom: 2rem; padding: 0; border: 1px solid #e6e6e6; }
+        .msg_list li .msg_title { padding: 0 1rem; color: #333; background: #f6f6f6; height: 5.5rem; line-height: 5.5rem; font-size: 1.8rem; }
+        .msg_list li .msg_content { padding: 0 1rem; color: #666; line-height: 1.5; background-color: #fff; }
+            .msg_list li .msg_content h4 { padding: 10px 0 5px; font-weight: normal; color: #333; }
+            .msg_list li .msg_content p { padding: 5px 0; }
+                .msg_list li .msg_content p span { color: #5c83e5; }
+        .msg_list li.loadmore { width: 100%; text-align: center; line-height: 1.5;  color: #999; font-size: 1.6rem; text-align: center; border: 0; }
+            .msg_list li.loadmore i { margin: 5px 0 0 5px; width: 16px; height: 16px; background: url(../images/tip.png) no-repeat 0 0; background-size: 16px 16px; display: inline-block; vertical-align: top; }
+.trs_left { -webkit-animation: left_r 0.18s 1 linear forwards; }
+.trs_right { -webkit-animation: right_r 0.18s 1 linear forwards; }
+
+.line_left { -webkit-animation: left_lr 0.18s 1 linear forwards; }
+.line_right { -webkit-animation: right_lr 0.18s 1 linear forwards; }
+
+.nodata { padding: 3rem 1rem; text-align: center; line-height: 2; }
+    .nodata h2 { font-weight: normal; font-size: 2rem; }
+    .nodata p { font-size: 1.6rem; }
+
+@-webkit-keyframes left_r {
+
+    0% { left: -100%; }
+    100% { left: 0; }
+}
+
+@-webkit-keyframes right_r {
+    0% { left: 0; }
+    100% { left: -100%; }
+}
+
+@-webkit-keyframes left_lr {
+    0% { left: 50%; }
+    100% { left: 0; }
+}
+
+@-webkit-keyframes right_lr {
+    0% { left: 0; }
+    100% { left: 50%; }
+}
